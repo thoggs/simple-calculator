@@ -1,6 +1,6 @@
 language: python
 sudo: required
-
+dist: bionic
 python:
   - 3.8
 
@@ -22,7 +22,7 @@ install:
 
 #language: python
 #sudo: required
-#dist: bionic
+#
 #python:
 #  - "3.8"
 #virtualenv:
