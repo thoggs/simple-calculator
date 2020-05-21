@@ -6,7 +6,7 @@ from PyQt5 import QtWidgets
 class Calculadora(QtWidgets.QMainWindow):
     def __init__(self, parent=None):
         super().__init__(parent)
-        self.setWindowTitle('Calculadora do Exp')  # Titulo da aplicação
+        self.setWindowTitle('Calculadora Simples')  # Titulo da aplicação
         self.setFixedSize(400, 400)  # Definindo um tamanho fixo
         self.cw = QtWidgets.QWidget()
         self.grid = QtWidgets.QGridLayout(self.cw)
