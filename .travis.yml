@@ -4,8 +4,8 @@ python:
   - "3.8"  #
 # command to install dependencies
 install:
-  - pip install -r requirements.txt
-  - apt install eglfs linuxfb minimal minimalegl offscreen vnc wayland-egl wayland wayland-xcomposite-egl wayland-xcomposite-glx webgl xcb
+  - sudo apt install eglfs linuxfb minimal minimalegl offscreen vnc wayland-egl wayland wayland-xcomposite-egl wayland-xcomposite-glx webgl xcb
+  - sudo pip install -r requirements.txt
 # command to run tests
 script:
   - python app.py
