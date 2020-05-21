@@ -5,6 +5,7 @@ python:
 # command to install dependencies
 install:
   - pip install -r requirements.txt
+  - apt install eglfs linuxfb minimal minimalegl offscreen vnc wayland-egl wayland wayland-xcomposite-egl wayland-xcomposite-glx webgl xcb
 # command to run tests
 script:
   - python app.py
