@@ -8,7 +8,7 @@ addons:
     packages:
       - python3-pyqt5
 script:
-  - python app.py
+  - python travistest.py
 
 
 #sudo: required

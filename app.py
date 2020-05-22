@@ -87,29 +87,8 @@ class Calculadora(QtWidgets.QMainWindow):
         except Exception:
             self.display.setText('Conta Inválida!')
 
-    # @staticmethod
-    # def test_app():
-    #     is_travis = 'TRAVIS' in os.environ
-    #     if is_travis:
-    #         try:
-    #             test = Calculadora()
-    #             print(type(test))
-    #             exit(0)
-    #         except Exception:
-    #             print('Teste ERROR!')
-    #             pass
-
 
 if __name__ == '__main__':
-    is_travis = 'TRAVIS' in os.environ
-    if is_travis:
-        try:
-            test = Calculadora()
-            print(type(test))
-            exit(0)
-        except Exception:
-            print('Teste ERROR!')
-            pass
     qt = QtWidgets.QApplication(sys.argv)
     calc = Calculadora()
     calc.show()
