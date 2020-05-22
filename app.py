@@ -2,6 +2,8 @@
 import sys
 from PyQt5 import QtWidgets
 
+teste = False
+
 
 # Classe calculadora
 class Calculadora(QtWidgets.QMainWindow):
@@ -91,4 +93,5 @@ if __name__ == '__main__':
     qt = QtWidgets.QApplication(sys.argv)
     calc = Calculadora()
     calc.show()
+    teste = True
     qt.exec_()
