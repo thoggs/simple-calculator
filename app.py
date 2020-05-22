@@ -92,8 +92,8 @@ class Calculadora(QtWidgets.QMainWindow):
         is_travis = 'TRAVIS' in os.environ
         if is_travis:
             try:
-                Calculadora()
-                print('Teste OK!')
+                test = Calculadora()
+                print(type(test))
                 exit(0)
             except Exception:
                 print('Teste ERROR!')
