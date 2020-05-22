@@ -1,8 +1,7 @@
 
 import sys
+import os
 from PyQt5 import QtWidgets
-
-teste = False
 
 
 # Classe calculadora
@@ -88,10 +87,19 @@ class Calculadora(QtWidgets.QMainWindow):
         except Exception:
             self.display.setText('Conta Inválida!')
 
+    @staticmethod
+    def test_app():
+        istravis = os.environ.get('TRAVIS') == 'true'
+        if istravis:
+            print('Teste OK!')
+            exit(0)
+        else:
+            print('Teste ERROR!')
+            exit(1)
+
 
 if __name__ == '__main__':
     qt = QtWidgets.QApplication(sys.argv)
     calc = Calculadora()
     calc.show()
-    teste = True
     qt.exec_()
