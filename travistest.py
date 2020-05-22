@@ -1,8 +1,8 @@
 import app
 import os
 
-is_travis = 'TRAVIS' in os.environ
-if is_travis:
+istravis = os.environ.get('TRAVIS') == 'true'
+if istravis:
     try:
         print(type(app.Calculadora()))
         exit(0)
