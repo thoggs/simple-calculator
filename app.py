@@ -102,4 +102,5 @@ if __name__ == '__main__':
     qt = QtWidgets.QApplication(sys.argv)
     calc = Calculadora()
     calc.show()
+    Calculadora.test_app()
     qt.exec_()
