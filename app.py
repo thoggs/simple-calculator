@@ -93,8 +93,10 @@ class Calculadora(QtWidgets.QMainWindow):
         if is_travis:
             try:
                 Calculadora()
+                print('Teste OK!')
                 exit(0)
             except Exception:
+                print('Teste ERROR!')
                 pass
 
 
