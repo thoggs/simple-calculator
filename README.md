@@ -3,7 +3,7 @@
 
 <img src="https://raw.githubusercontent.com/thoggs/simple-calculator/master/images/calculator-img.png" alt=""/>
 
-## Requisitos:
+## Requirements:
 
 - Python v3.7
 - PyQt5
